@@ -1,13 +1,15 @@
 {
   "scripts": {
     "start": "http-server",
-    "test": "cypress open"
-  },
-  "devDependencies": {
-    "cypress": "^4.3.0",
-    "cypress-axe": "^0.8.1"
+    "test": "cypress open",
+    "html:report": "cypress run --spec cypress/e2e/accessibility/daon.cy.js --browser chrome --headed"
   },
   "dependencies": {
-    "http-server": "^0.12.3"
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "cypress-axe": "^1.4.0"
   }
 }
